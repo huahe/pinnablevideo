@@ -1,0 +1,58 @@
+.uvn-copy {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.uvn-pinned {
+    margin-top: 0;
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 10px;
+    bottom: 100px;
+    width: 50% !important;
+    max-width: 360px;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.uvn-liveblog-goup,
+.uvn-pinned {
+    box-shadow: -3px 5px 10px -1px rgba(0, 0, 0, .6);
+}
+
+.uvn-pin-ani {
+    transition: all .5s ease-out;
+    bottom: 15px;
+    opacity: 1;
+}
+
+.uvn-unpinned {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.uvn-unpin-button {
+    position: fixed;
+    right: 14px;
+    bottom: 30px;
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: transparent url('http://cdn1.uvnimg.com/2a/cb/a70591054abbbe749eed358739ef/close-white.svg') no-repeat center center;
+    cursor: pointer;
+    background-size: 20px auto;
+    border-radius: 100%;
+    z-index: 10000;
+    margin-bottom: 10px;
+}
+
+.uvn-unpin-button:hover {
+    background-color: rgba(0, 0, 0, .8)
+}
+
+.uvn-pinned .jw-controlbar {
+    display: none !important;
+}
